@@ -12,18 +12,18 @@
 
     <!-- البنر العلوي -->
     <div class="banner-container">
-        <img src="/banner.jpg" alt="banner" class="banner-img">
+        <img src="{{ url_for('static', filename='banner.jpg') }}" alt="banner" class="banner-img" onerror="this.style.display='none'">
     </div>
 
     <div class="container">
         <!-- قسم التعريف الشخصي -->
         <div class="profile-header">
-            <img src="/Avatar.jpg" alt="أبو خلي" class="profile-img" onerror="this.src='/Avatar.gif'">
+            <img src="{{ url_for('static', filename='Avatar.jpg') }}" alt="أبو خلي" class="profile-img" onerror="this.src='{{ url_for('static', filename='Avatar.gif') }}'">
         </div>
 
         <!-- الشعار المفرغ -->
         <div class="logo-container">
-            <img src="/logo.png" alt="شعار أبو خلي" class="logo-img">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="شعار أبو خلي" class="logo-img" onerror="this.style.display='none'">
         </div>
 
         <p class="bio">الصفحة الرسمية - تابعوني على منصات التواصل الاجتماعي ولا تفوتوا البثوث المباشرة!</p>
@@ -36,7 +36,7 @@
             <span class="badge">{{ schedule.status }}</span>
         </div>
 
-        <!-- روابط التواصل -->
+        <!-- روابط التواصل مع شعارات التطبيقات -->
         <div class="links-container">
             <a href="{{ socials.kick.url }}" target="_blank" class="social-btn kick">
                 <i class="fa-solid fa-video"></i>
