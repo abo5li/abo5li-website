@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أبو خلي | الموقع الشخصي</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- مكتبة الأيقونات العالمية FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --neon-green: #00ff66;
@@ -98,7 +97,7 @@
             margin-bottom: 25px;
         }
 
-        /* تصميم أزرار التواصل مع الأيقونات */
+        /* تنسيق أزرار التواصل لتعطيك الشكل الاحترافي والمطابق للصورة */
         .social-btn {
             display: flex;
             align-items: center;
@@ -115,31 +114,29 @@
             box-shadow: 0 0 8px rgba(0, 255, 102, 0.15);
         }
 
-        /* تنسيق شعار التطبيق النازل بجانب الاسم */
-        .app-icon {
-            font-size: 24px;
+        .social-btn i {
+            font-size: 20px;
             color: var(--neon-green);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 30px;
+            margin-right: 12px;
+            min-width: 25px;
+            text-align: center;
         }
 
-        .btn-text {
+        .social-btn .btn-label {
             flex-grow: 1;
             text-align: right;
-            margin-right: 12px;
         }
 
-        .username {
+        .social-btn .username {
             color: var(--gray-text);
             font-size: 14px;
             font-weight: normal;
+            text-align: left;
             direction: ltr;
         }
 
         .social-btn:hover {
-            background-color: rgba(0, 255, 102, 0.12);
+            background-color: rgba(0, 255, 102, 0.1);
             color: var(--neon-green);
             border-color: #ffffff;
             box-shadow: 0 0 20px var(--neon-green), 0 0 35px rgba(0, 255, 102, 0.7);
@@ -169,10 +166,6 @@
             font-size: 14px;
             color: var(--gray-text);
             margin-bottom: 6px;
-        }
-
-        .schedule-card strong {
-            color: var(--text-color);
         }
 
         .badge {
@@ -226,6 +219,17 @@
             background-color: #00cc52;
         }
 
+        .alert-success {
+            background-color: rgba(0, 255, 102, 0.15);
+            border: 1px solid var(--neon-green);
+            color: var(--neon-green);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
         footer {
             margin-top: 10px;
             font-size: 12px;
@@ -254,50 +258,50 @@
 
         <p class="bio">الصفحة الرسمية - تابعوني على منصات التواصل الاجتماعي ولا تفوتوا البثوث المباشرة!</p>
 
-        <!-- روابط التواصل مع شعار كل تطبيق بجانبه -->
-        <div class="links-container">
-            
-            <!-- زر كيك Kick -->
-            <a href="https://kick.com/2bo5li" target="_blank" class="social-btn">
-                <div class="app-icon"><i class="fa-solid fa-headset"></i></div>
-                <div class="btn-text">KICK</div>
-                <div class="username">(@2bo5li)</div>
-            </a>
-
-            <!-- زر تويتر X -->
-            <a href="https://x.com/2bo5li" target="_blank" class="social-btn">
-                <div class="app-icon"><i class="fa-brands fa-x-twitter"></i></div>
-                <div class="btn-text">TWITTER</div>
-                <div class="username">(@2bo5li)</div>
-            </a>
-
-            <!-- زر سناب شات Snapchat -->
-            <a href="https://snapchat.com/add/a2bo5li" target="_blank" class="social-btn">
-                <div class="app-icon"><i class="fa-brands fa-snapchat"></i></div>
-                <div class="btn-text">SNAPCHAT</div>
-                <div class="username">(@a2bo5li)</div>
-            </a>
-
-            <!-- زر تيك توك TikTok -->
-            <a href="https://tiktok.com/@2bo5li" target="_blank" class="social-btn">
-                <div class="app-icon"><i class="fa-brands fa-tiktok"></i></div>
-                <div class="btn-text">TIKTOK</div>
-                <div class="username">(@2bo5li)</div>
-            </a>
-
-        </div>
-
         <!-- مواعيد البثوث -->
         <div class="schedule-card">
-            <h2><i class="fa-solid fa-calendar-days"></i> جدول البثوث</h2>
+            <h2><i class="fa-solid fa-calendar-days"></i> مواعيد البثوث المباشرة</h2>
             <p><strong>الأيام:</strong> من الأحد إلى الخميس</p>
             <p><strong>الوقت:</strong> العاشرة مساءً بتوقيت مكة المكرمة</p>
             <span class="badge">يتم الإعلان عن البثوث الخاصة قبلها عبر سناب وتويتر</span>
         </div>
 
+        <!-- روابط التواصل مع الأيقونات والشعارات المطلوبة بالترتيب الصحيح -->
+        <div class="links-container">
+            
+            <!-- منصة كيك (Kick) بالشعار البديل المخصص للبثوث والألعاب -->
+            <a href="https://kick.com/2bo5li" target="_blank" class="social-btn">
+                <span class="username">@2bo5li</span>
+                <span class="btn-label">منصة كيك (Kick)</span>
+                <i class="fa-solid fa-satellite-dish"></i>
+            </a>
+
+            <!-- منصة تويتر (X) -->
+            <a href="https://x.com/2bo5li" target="_blank" class="social-btn">
+                <span class="username">@2bo5li</span>
+                <span class="btn-label">منصة تويتر (X)</span>
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <!-- سناب شات -->
+            <a href="https://snapchat.com/add/a2bo5li" target="_blank" class="social-btn">
+                <span class="username">@a2bo5li</span>
+                <span class="btn-label">سناب شات</span>
+                <i class="fa-brands fa-snapchat"></i>
+            </a>
+
+            <!-- تيك توك -->
+            <a href="https://tiktok.com/@2bo5li" target="_blank" class="social-btn">
+                <span class="username">@2bo5li</span>
+                <span class="btn-label">تيك توك</span>
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+        </div>
+
         <!-- إرسال رسالة خاصة سرية -->
         <div class="contact-card">
-            <h2><i class="fa-solid fa-comments"></i> تواصل معي سرياً</h2>
+            <h2><i class="fa-solid fa-comments"></i> أرسل لي رسالة خاصة</h2>
             <form action="https://formspree.io/f/xyeewlwk" method="POST" class="contact-form">
                 <input type="text" name="name" placeholder="اسمك الكريم" required>
                 <input type="text" name="contact_info" placeholder="وسيلة التواصل (سناب / تويتر)">
