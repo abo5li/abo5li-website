@@ -12,25 +12,21 @@
 
     <!-- البنر العلوي -->
     <div class="banner-container">
-        <img src="{{ url_for('static', filename='banner.png') }}" alt="Banner" class="banner-img">
+        <img src="/banner.jpg" alt="banner" class="banner-img">
     </div>
 
     <div class="container">
         <!-- قسم التعريف الشخصي -->
         <div class="profile-header">
-            <div class="avatar-container">
-                <img src="{{ url_for('static', filename='Avatar.jpg') }}"
-                     onerror="this.onerror=null; this.src='{{ url_for('static', filename='Avatar.gif') }}';"
-                     alt="أبو خلي" class="profile-img">
-            </div>
-
-            <!-- الشعار المفرغ -->
-            <div class="logo-container">
-                <img src="{{ url_for('static', filename='logo.png') }}" alt="شعار أبو خلي" class="logo-img">
-            </div>
-
-            <p class="bio">الصفحة الرسمية - تابعوني على منصات التواصل الاجتماعي ولا تفوتوا البثوث المباشرة!</p>
+            <img src="/Avatar.jpg" alt="أبو خلي" class="profile-img" onerror="this.src='/Avatar.gif'">
         </div>
+
+        <!-- الشعار المفرغ -->
+        <div class="logo-container">
+            <img src="/logo.png" alt="شعار أبو خلي" class="logo-img">
+        </div>
+
+        <p class="bio">الصفحة الرسمية - تابعوني على منصات التواصل الاجتماعي ولا تفوتوا البثوث المباشرة!</p>
 
         <!-- مواعيد البثوث -->
         <div class="schedule-card">
